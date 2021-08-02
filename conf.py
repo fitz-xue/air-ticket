@@ -1,0 +1,6 @@
+amadeus_user_name = ''
+amadeus_user_pwd = ''
+amadeus_office_id = ''
+amadeus_url = 'https://www.sellingplatformconnect.amadeus.com/LoginService/login.jsp?SITE=LOGINURL&LANGUAGE=GB&refreshOnError=true'
+chromedirver_path = '/usr/local/bin/chromedriver'
+otp_path = '/Users/hbxue/Desktop/otp.txt'
