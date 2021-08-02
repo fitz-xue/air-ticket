@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 import time
 from time import sleep
@@ -8,6 +7,7 @@ import sys
 import os
 import datetime
 import conf
+from email_handler import sendEmail
 
 amadeus_user_name = conf.amadeus_user_name
 amadeus_user_pwd = conf.amadeus_user_pwd
@@ -105,10 +105,6 @@ def book_ticket(seats):
     sleep(3)
 
 
-def notify():
-    pass
-
-
 if __name__ == '__main__':
     i = 0
     while 1:
@@ -121,4 +117,5 @@ if __name__ == '__main__':
                 continue
             elif isinstance(ret, int):
                 book_ticket(seats=ret)
+                sendEmail('订到票啦', '订到票啦啦啦')
                 break

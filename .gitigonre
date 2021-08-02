@@ -1,2 +1,3 @@
 get_otp_2.py
-__pycache__
+__pycache__/*
+conf.py
