@@ -90,6 +90,7 @@ def parse_result():
             if '728' in li:
                 valid_lines.append(li)
         position_arg = valid_lines[-1].split()[4][1]
+        print(f'position_arg --> {position_arg}')
         try:
             valid_seats_num = int(position_arg)
             return valid_seats_num
